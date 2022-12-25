@@ -26,7 +26,7 @@ void main(){
         printf("\nThe condition P=(N/2) is not satisfied");
         exit(0);
     }
-    printf("%d \n %d \n %d \n %d",*N,*L,*M,*P);
+    
 
     struct day *d = (struct day*)malloc(5*sizeof(struct day));
 
