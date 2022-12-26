@@ -9,16 +9,16 @@ void main(){
     FILE *ptr = fopen("./sample2/initial.txt","r");
     FILE *ptr1 = fopen("./sample2/courses.txt","r");
     int *T= (int*)malloc(sizeof(int));
-    fscanf(ptr,"%d",T);
+    fscanf(ptr,"%d",T);//total number of courses
     struct course *course=(struct course*)malloc(sizeof(struct course));
 
     int *N,*L,*M,*P;
-	N=(int*)malloc(sizeof(int));
-	L=(int*)malloc(sizeof(int));
-	M=(int*)malloc(sizeof(int));
-	P=(int*)calloc(1,sizeof(int));
+	N=(int*)malloc(sizeof(int));//Number of Theory Courses
+	L=(int*)malloc(sizeof(int));//Number of Tutorial Courses
+	M=(int*)malloc(sizeof(int));//Number of Lab Courses
+	P=(int*)calloc(1,sizeof(int));//Number of Teachers
 
-    get_course(T,course,ptr1,P);
+    get_course(T,course,ptr1,P);//taking raw input
     processing(T,N,M,L,course);
     
 
@@ -28,7 +28,7 @@ void main(){
     }
     
 
-    struct day *d = (struct day*)malloc(5*sizeof(struct day));
+    struct day *d = (struct day*)malloc(5*sizeof(struct day));//creating 5 day's slot
 
     course_allotment(d,L,M,N,course);
     
