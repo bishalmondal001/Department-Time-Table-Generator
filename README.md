@@ -41,6 +41,6 @@ We are taking this raw input through **get_course()** function and also using th
 
 After this with **processing()** function I am first getting N,L,M and then separating them into **Theory_courses**,**Tutorial_courses**,**Lab_courses**.The definition of this function is in **[process.h](https://github.com/insaneoptimizer001/Department-Time-Table-Generator/blob/main/Process.h)**.
 
-Now we are allocating slots.We have 5 days.Every day has 8 slots and each slot has 6 classes.With **allocate()** function, I am allocating the required classes for each courses to different slots randomly.The definition of the funtion is given in **[allocate.h](https://github.com/insaneoptimizer001/Department-Time-Table-Generator/blob/main/allocate.h)**.
+Now we are allocating slots.We have 5 days.Every day has 8 slots and each slot has 6 classes.With **course_allotment()** function, I am allocating the required classes for each courses to different slots randomly.The definition of the funtion is given in **[allocate.h](https://github.com/insaneoptimizer001/Department-Time-Table-Generator/blob/main/allocate.h)**.
 
 In the end printing the the information of each slot as a timetable.
